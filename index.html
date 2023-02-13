@@ -3,12 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/style.css"></head>
-<body>
+    <link rel="stylesheet" href="./assets/style.css"></head>
+<body onload="init();">
     
+    <table class="calculadora">
+        <tr>
+            <td class= "pantalla" colspan=4><input  type="text" id="resultado" placeholder="0"></td>
+        </tr>
+        <tr>
+            <td><button onclick="show('1')" id="uno">1</button></td>
+            <td><button onclick="show('2')" id="dos">2</button></td>
+            <td><button onclick="show('3')" id="tres">3</button></td>
+            <td><button onclick="show('-')" id="resta">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="show('4')" id="cuatro">4</button></td>
+            <td><button onclick="show('5')" id="cinco">5</button></td>
+            <td><button onclick="show('6')" id="seis">6</button></td>
+            <td><button onclick="show('+')" id="suma">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="show('7')" id="siete">7</button></td>
+            <td><button onclick="show('8')" id="ocho">8</button></td>
+            <td><button onclick="show('9')" id="nueve">9</button></td>
+            <td><button onclick="show('*')" id="multiplicacion">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="wipe()"id="reset">C</button></td>
+            <td><button onclick="show('0')" id="cero">0</button></td>
+            <td><button onclick="calc('=')" id="igual">=</button></td>
+            <td><button onclick="show('/')" id="division">/</button></td>
+        </tr>
+    </table>
 
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

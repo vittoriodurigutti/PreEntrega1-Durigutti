@@ -1,9 +1,12 @@
-//alert()
+let resultado = document.getElementById("resultado");
 
-let textoA= "vittorio";
-let textoB= "durigutti";
-const blanco= " ";
+    const wipe = () => {
+        resultado.value = "";
+    }
 
-let nombre= textoA + blanco + textoB;
+    const show = (n) => {
+        resultado.value += n;
+    }
 
-let ingreseNombre = prompt ("ingrese su nombre");
+    const calc = () => {
+        resultado.value =  eval(resultado.value)  }
